@@ -1,0 +1,147 @@
+.container {
+  @apply absolute top-0 right-0 flex w-1/3 h-screen;
+}
+
+.content {
+  @apply relative flex flex-col justify-center w-full h-full gap-8 p-8 rounded-lg shadow-lg;
+}
+
+.contentBox {
+  @apply flex flex-col gap-8 p-8;
+}
+
+.closeBtn {
+  @apply flex px-3 py-2 ml-auto text-lg text-gray-500 border-2 rounded-sm top-2 right-2 hover:text-white border-borderCol hover:border-2 hover:border-white;
+}
+
+.title {
+  @apply text-lg font-bold opacity-70;
+}
+
+.date {
+  @apply flex justify-end text-base opacity-70;
+}
+
+.desc {
+  @apply mt-2 opacity-70;
+}
+
+.viewBtn {
+  @apply block mt-2 text-blue-500 hover:underline;
+}
+
+/* carousel */
+
+.carousel {
+  @apply flex gap-2 p-3 border rounded-md bg-grayBox border-borderCol;
+}
+
+.cmn_column {
+  @apply flex flex-col w-full border rounded-md border-borderCol bg-containerGray hover:bg-projectBg;
+}
+
+.column {
+  @apply cmn_column h-52;
+}
+
+.column2 {
+  @apply justify-center cmn_column h-52;
+}
+
+.imgDiv {
+  @apply h-full p-2;
+}
+
+.imgDiv2 {
+  @apply p-2 h-1/2;
+}
+
+.img {
+  @apply object-cover w-full h-full rounded-md;
+}
+
+.img2 {
+  @apply object-cover w-full h-full rounded-md;
+}
+
+.showcaseBox {
+  @apply flex items-center justify-center p-2 m-2 text-center rounded-md cursor-pointer bg-grayBox h-1/2;
+}
+
+.imgText {
+  @apply items-center justify-center w-full h-40 p-6 m-auto cmn_column;
+}
+
+.text {
+  @apply opacity-60;
+}
+
+/* full screen carousel */
+
+.fsDiv {
+  @apply fixed top-0 left-0 z-10 flex w-full h-full bg-normalBlack;
+}
+
+.fullScreenModal {
+  @apply flex items-center justify-center w-full h-full m-auto;
+}
+
+.fullImg {
+  @apply object-cover rounded-md;
+}
+
+.nextButton {
+  @apply p-3 flex justify-center  h-full w-[10%] items-center;
+}
+
+.prevButton {
+  @apply p-3 flex justify-center  h-full w-[10%] items-center;
+}
+
+.fsCloseBtn {
+  @apply absolute px-3 py-2 border-2 right-28 top-5 hover:border-white border-borderCol;
+}
+
+/* for about me page */
+
+.meContainer {
+  @apply absolute top-0 left-0 flex w-1/3 h-screen;
+}
+
+.meContent {
+  @apply relative flex items-center justify-center w-full h-full;
+}
+
+.meContentBox {
+  @apply bg-grayBox border border-borderCol rounded-md p-6 flex flex-col w-[85%] h-[85%] gap-8;
+}
+
+.pfHead {
+  @apply flex flex-row;
+}
+
+.pp {
+  @apply flex p-2 border-2 rounded-full border-borderCol bg-grayBox h-28 w-28;
+}
+
+.headText {
+  @apply justify-center inline w-1/2 m-auto text-2xl;
+}
+
+.textStackDiv {
+  @apply flex flex-col h-screen gap-2;
+}
+
+.aboutMeText {
+  @apply p-6 text-white rounded-md bg-containerGray text-opacity-80 h-[60%];
+}
+
+.stackDiv{
+  @apply grid grid-rows-2 grid-cols-4 gap-2
+}
+
+.techBox{
+  @apply border border-borderCol bg-containerGray p-6 rounded-md  hover:bg-projectBg h-28 flex justify-center items-center transform hover:scale-105 transition duration-300
+}
+
+
