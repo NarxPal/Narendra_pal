@@ -48,7 +48,7 @@ const Modal = ({ selectedProject, closeModal, pfModalVisible }) => {
                   className={styles.pp}
                 />
 
-                <div className={styles.headText}>Ohh!, my anonymous freind</div>
+                <div className={styles.headText}>Ohh!, my anonymous friend</div>
               </div>
 
               <div className={styles.textStackDiv}>
