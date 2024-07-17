@@ -100,6 +100,10 @@ export default function Index() {
     setSelectedProject(null);
   };
 
+  const closePfModal = () => {
+    setPfModalVisible(false);
+  };
+
   const handleHomeBtn = () => {
     closeModal();
     setPfModalVisible(false);
@@ -278,11 +282,14 @@ export default function Index() {
           <Modal
             selectedProject={selectedProject}
             closeModal={closeModal}
+            closePfModal={closePfModal}
             pfModalVisible={pfModalVisible}
           />
         )}
 
-        {pfModalVisible && <Modal pfModalVisible={pfModalVisible} />}
+        {pfModalVisible && (
+          <Modal pfModalVisible={pfModalVisible} closePfModal={closePfModal} />
+        )}
       </div>
     </>
   );

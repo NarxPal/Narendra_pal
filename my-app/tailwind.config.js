@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "280px",
+        md: "768px",
+        lg: "1393px",
+        xl: "1440px",
+      },
+
       colors: {
         normalBlack: "#161616",
         grayBox: "#212121",
